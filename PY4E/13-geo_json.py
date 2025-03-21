@@ -2,7 +2,7 @@ import urllib.request, urllib.parse, urllib.error
 import json
 
 service_url = 'https://maps.googleapis.com/maps/api/geocode/json?'#address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY
-api_key = 'AIzaSyAMq5I0wdcSrYtIA7zJpVOYzwcYtbCQn4Q'
+api_key = 'yourapikey'
 
 while True:
     address = input('Enter location: ')
