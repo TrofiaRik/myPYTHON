@@ -1,0 +1,68 @@
+print("Examples with some methods")
+print("#1 \"find()\"")
+fruit="banana"
+x=fruit.find("na")
+print("This gonna print the starting index position of the FIRST occurance of the searched string ('na') ")
+print(x)
+y=fruit.find("z")
+print("THis is searching for 'z' which does not exist and therefore I get a 'fail' which is as default '-1'")
+print(y)
+print("#2 upper and lower conversions")
+greet="Ciao Riccardo"
+upper_greet=greet.upper()
+lower_greet=greet.lower()
+print(upper_greet)
+print(lower_greet)
+print("\n\n")
+print("------------------------")
+print("#3 SEARCH & REPLACE")
+print("------------------------")
+print("\n\n")
+greet="Hello Riccardo!"
+print(greet)
+new_name=input("I am going to print again the greeting: \"Hello Riccardo\"!\n\nIf you wish to greet someone else, please insert his/her name!")
+rpl=greet.replace("Riccardo",new_name)
+print(rpl)
+old_lett=input("And now let's play a game: chose a letter you wish to replace...: ")
+new_lett=input("and now, the new letter you whish to insert in its place: ")
+rpl2=rpl.replace(old_lett, new_lett)
+print(rpl2)
+print("\n\n")
+print("------------------------")
+print("#4 STRIPPING WHITESPACES")
+print("------------------------")
+print("\n\n")
+greet="\n   Hello Bob    \n"
+ls=greet.lstrip()
+rs=greet.rstrip()
+st=greet.strip()
+print(ls)
+print(rs)
+print(st)
+print("\n\n")
+print("------------------------")
+print("#5 START WITH (PREFIXES)")
+print("------------------------")
+str="Hello my dear"
+print("This is my string: ",str)
+stop=0
+while stop==0:
+    qst=input("Does the string starts with ")
+    print("Use \"XXX\" in order to exit")
+    print(str.startswith(qst))
+    if qst=="XXX":
+        stop="XXX"
+print("\n\n")
+print("\n\n")
+print("------------------------")
+print("#6 PARSING & EXTRACTING")
+print("------------------------")
+print("\n")
+print("Let's extract the part of the text containing the domanin, therefore, after the \"@\"")
+data="From stephen.marquard@uct.ac.za Sat Jan   5 09:14:16 2008"
+start=data.find("@")
+end=data.find(" ",start)
+extracted_data=data[start+1:end]
+print(extracted_data)
+str="नमस्कार"
+print(type(str))
